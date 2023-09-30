@@ -1,0 +1,13 @@
+POST http://localhost:3000/api/profile/expense
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NTE4MzU4MTJlYWRiYTVhMGQ0OTVjYTEiLCJpYXQiOjE2OTYwODUzNzcsImV4cCI6MTY5NjE3MTc3N30.xN7ifqvxQ9hzQmjgpvuk7eJ4Ukpn1shW0Yd7q8bXfdk
+
+{
+  "note": "sample note 2",
+  "year": 2023,
+  "month": 8,
+  "day": 30,
+  "monthName": "September",
+  "dayName": "Saturday",
+  "productId": "651835d52eadba5a0d495ca8"
+}

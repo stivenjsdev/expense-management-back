@@ -1,0 +1,3 @@
+GET http://localhost:3000/api/profile/currentTotals
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NTE4MzU4MTJlYWRiYTVhMGQ0OTVjYTEiLCJpYXQiOjE2OTYwODUzNzcsImV4cCI6MTY5NjE3MTc3N30.xN7ifqvxQ9hzQmjgpvuk7eJ4Ukpn1shW0Yd7q8bXfdk

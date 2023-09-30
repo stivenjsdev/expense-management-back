@@ -1,0 +1,14 @@
+POST http://localhost:3000/api/profile/revenue
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NTE4MzU4MTJlYWRiYTVhMGQ0OTVjYTEiLCJpYXQiOjE2OTYwODUzNzcsImV4cCI6MTY5NjE3MTc3N30.xN7ifqvxQ9hzQmjgpvuk7eJ4Ukpn1shW0Yd7q8bXfdk
+
+{
+  "description": "sample description",
+  "value": 500000,
+  "year": 2023,
+  "month": 8,
+  "day": 1,
+  "monthName": "September",
+  "dayName": "Friday",
+  "userId": "651835812eadba5a0d495ca1"
+}
