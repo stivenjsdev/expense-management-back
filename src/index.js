@@ -36,7 +36,7 @@ const main = async () => {
     await dbConnection();
 
     server.listen(PORT, () => {
-      console.log(`Servidor corriendo en el  puerto ${PORT}`);
+      console.log(`Server running on the port ${PORT}`);
     });
   } catch (error) {
     console.log(error.name);
