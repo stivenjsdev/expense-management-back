@@ -1,10 +1,11 @@
 import cors from "cors";
 import "dotenv/config";
 import express from "express";
-import mongoose from "mongoose";
 
+import { dbConnection } from "./database/db.js";
 import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 import { requestLogger } from "./middlewares/logger.js";
+import { unknownEndpoint } from "./middlewares/unknownEndpoint.middleware.js";
 import authRoutes from "./routes/auth.routes.js";
 import profileRoutes from "./routes/profile.routes.js";
 
@@ -26,13 +27,13 @@ server.use("/api/welcome", (req, res) =>
 );
 
 // Middlewares
+server.use(unknownEndpoint);
 server.use(errorHandler);
 
 const main = async () => {
   try {
     // conectar a MongoDB
-    await mongoose.connect(URL);
-    console.log(`connected to ${URL}`);
+    await dbConnection();
 
     server.listen(PORT, () => {
       console.log(`Servidor corriendo en el  puerto ${PORT}`);
