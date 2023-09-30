@@ -6,6 +6,10 @@ const revenueSchema = new Schema(
       type: String,
       required: true,
     },
+    value: {
+      type: Number,
+      required: true,
+    },
     year: {
       type: Number,
       required: true,
